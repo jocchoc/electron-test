@@ -27,4 +27,17 @@ module.exports = {
       config: {},
     },
   ],
-};
+  publishers: [
+    {
+      name: '@electron-forge/publisher-github',
+      config: {
+        repository: {
+          owner: 'jocchoc',
+          name: 'electron-test',
+        },
+        prerelease: false,
+        draft: true,
+      },
+    },
+  ],
+}
